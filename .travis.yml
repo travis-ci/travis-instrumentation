@@ -1,0 +1,11 @@
+sudo: false
+language: ruby
+
+rvm:
+  - 2.0
+  - 2.1
+  - 2.2
+  - jruby-19mode
+  - jruby-9
+
+script: bundle exec rspec spec --color --format documentation --require spec_helper
