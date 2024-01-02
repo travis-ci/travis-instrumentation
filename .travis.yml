@@ -9,3 +9,5 @@ rvm:
   - jruby-9
 
 script: bundle exec rspec spec --color --format documentation --require spec_helper
+before_install:
+  - gem install rubygems-update -v 3.4.22
